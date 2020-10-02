@@ -1,0 +1,40 @@
+/* Sidebar Row */
+.sidebar{
+    position: fixed;
+    padding: 25px 10px;
+    flex: 0.33;
+    width: 22%;
+}
+.sidebarRow{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+.sidebarRow:hover{
+    background-color: rgb(235, 231, 231);
+    border-radius: 10px;
+}
+.sidebarRow>h4{
+    margin-left: 20px;
+    font-weight: 600;
+}
+.sidebarRow > .MuiSvgIcon-root{
+    font-size: xx-large;
+    color: blue;
+}
+
+.page_name{
+    color: black;
+}
+
+.active1{
+    background-color: rgb(235, 231, 231);
+    border-radius: 10px;
+
+}
+
+.home_container{
+    display: flex;
+}
