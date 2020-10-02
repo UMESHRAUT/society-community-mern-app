@@ -109,13 +109,13 @@ function Service() {
                     <img src={service.imgURL ||"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"} className="profile_img" alert={service.name}/>
                     {image==""&&<input type="file" id="file" onChange={(e)=>{setImage(e.target.files[0])} } className="chose_btn"/>}
                     <div className="choice">
-                    {image!==""&&<button onClick={uploadImage} className="btn">uplad</button>}
-                    {image!==""&&<button onClick={()=>setImage("")} className="btn">cancle</button>}
+                    {image!==""&&<button onClick={uploadImage} className="control_btn">uplad</button>}
+                    {image!==""&&<button onClick={()=>setImage("")} className="control_btn">cancle</button>}
                     </div>
                 </div>
                 <div className="choice">
-                <button type="submit" onSubmit={addServer} className="btn">add</button>
-                <button type="button" onClick={()=>setAdd(false)} className="btn">cancle</button>
+                <button type="submit" onSubmit={addServer} className="control_btn">add</button>
+                <button type="button" onClick={()=>setAdd(false)} className="control_btn">cancle</button>
                 </div>
             </form>}
             <div className="services">

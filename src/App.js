@@ -59,7 +59,7 @@ function App() {
       <PrivateRoute component={ViewMembers} exact={true} path="/members" />
       <PrivateRoute component={Complaints} exact={true} path="/complaints"/>
       <PrivateRoute component={services} exact={true} path="/services"/>
-      <PublicRoute component={Main} path="/" />
+      <PublicRoute component={Main} exact={true} path="/" />
 
       {/* </Switch> */}
       <Footer />
